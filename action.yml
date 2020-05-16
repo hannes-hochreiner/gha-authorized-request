@@ -1,0 +1,25 @@
+name: 'Make an authorized web request'
+author: 'Hannes Hochreiner <hannes@hochreiner.net>'
+description: 'Gets an authorization token from auth0 and uses it for a web request'
+inputs:
+  auth0-domain:
+    description: 'Auth0 domain'
+    required: true
+  auth0-client-id:
+    description: 'Auth0 client id'
+    required: true
+  auth0-client-secret:
+    description: 'Auth0 client secret'
+    required: true
+  auth0-audience:
+    description: 'Auth0 audience'
+    required: true
+  data:
+    description: 'Data to send in the body of the request'
+    required: true
+  url:
+    description: 'URL of the request'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/main.js'
