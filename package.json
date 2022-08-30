@@ -19,7 +19,7 @@
   "homepage": "https://github.com/hannes-hochreiner/gha-authorized-request#readme",
   "dependencies": {
     "@actions/core": "^1.9.1",
-    "axios": "^0.21.1"
+    "axios": "^0.21.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
